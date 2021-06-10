@@ -6,20 +6,6 @@ import {
 import { client, wallet } from './clientAndWallet';
 const fs = require("fs");
 
-const initMsg = {
-  "min_deposit_per_user": "100",
-  "max_deposit_per_user": "10000",
-  "max_number_of_users": "5",
-  "denom": "ufrites",
-  "initial_validators": [
-		"terravaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35",
-		"terravaloper1krj7amhhagjnyg2tkkuh6l0550y733jnjnnlzy",
-		"terravaloper1kcux5ht2jslsyfzgs5wtfg4hx9dha8z4tes7xh",
-		"terravaloper1062zkmnlqhcpwsryk5kjf345x6njzzksqk9ljl",
-		"terravaloper12mcn4pj7d8yeff0xfedcthqe9gs3vwc2tn8sy2"
-  ]
-};
-
 async function main(): Promise<void> {
 	// const filepath = __dirname + "/../artifacts/stader_protocol_v0.wasm";
 	const filepath = __dirname + "/../artifacts/delete.wasm";
