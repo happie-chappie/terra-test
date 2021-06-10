@@ -9,6 +9,8 @@ export const client = new LCDClient({
 	URL: "https://bombay-fcd.terra.dev/",
 	// URL: 'http://3.34.120.243:1317/',
 	chainID: 'bombay-0007',
+	// gasPrices: { uluna: 0.5 },
+	// gasAdjustment: 1.4
 });
 
 const mk = new MnemonicKey({
