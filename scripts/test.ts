@@ -61,7 +61,8 @@ async function main2(): Promise<void> {
     wallet.key.accAddress,
     +codeId, // code ID
     { count: 0, }, // InitMsg
-    { uluna: 10000000, ukrw: 1000000 } // init coins
+		// { uluna: 10000000, ukrw: 1000000 } // init coins
+		{ uluna: 10000000} // init coins
   );
 
   const instantiateTx = await wallet.createAndSignTx({
