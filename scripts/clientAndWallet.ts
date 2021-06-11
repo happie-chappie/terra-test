@@ -4,13 +4,10 @@ const endpoint = "https://rpc.musselnet.cosmwasm.com";
 
 // connect to a network
 export const client = new LCDClient({
-	// URL: 'https://tequila-fcd.terra.dev',
-	// chainID: 'tequila-0004',
 	URL: "https://bombay-fcd.terra.dev/",
-	// URL: 'http://3.34.120.243:1317/',
 	chainID: 'bombay-0007',
-	// gasPrices: { uluna: 0.5 },
-	// gasAdjustment: 1.4
+	gasPrices: { uluna: 0.5 },
+	gasAdjustment: 1.4
 });
 
 const mk = new MnemonicKey({
